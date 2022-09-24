@@ -116,9 +116,12 @@ ul{
   top:0;
 }
 
+.mainContent {
+  display: flex;
+}
 
 main {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
 }
@@ -141,6 +144,12 @@ img {
 
 /* Responsiveness */
 @media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .nav{
       max-height: 100%;
       top: 0;
@@ -171,11 +180,20 @@ img {
 
   .menu a:hover{
     background-color: transparent;
-}
+  }
+
+  .menu a {
+    padding: 1rem;
+    padding-left: 0;
+  }
 
   .nav {
     background-color: #f9f9f9;
     color: black;
+  }
+
+  a.logo {
+    margin-left: 0;
   }
 
   .container {
@@ -184,7 +202,6 @@ img {
     align-items: center;
     justify-content: flex-start;
     margin-left: 10%;
-    
   }
 
   .logo {
