@@ -26,17 +26,18 @@ ul{
 
 /* Header */
 .header{
-  background-color: var(--black);
+  background-color: #f9f9f9;
   box-shadow: 1px 1px 5px 0px var(--gray);
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100%
+  ;
 }
 /* Logo */
 .logo{
   display: inline-block;
-  color: var(--white);
-  font-size: 60px;
+  color: black;
+  font-size: 2rem;
   margin-left: 10px;
 }
 
@@ -46,14 +47,14 @@ ul{
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--black);
+  background-color: #f9f9f9;
   overflow: hidden;
 
 }
 .menu a{
   display: block;
   padding: 30px;
-  color: var(--white);
+  color: black;
 }
 .menu a:hover{
   background-color: var(--gray);
@@ -116,9 +117,9 @@ ul{
   top:0;
 }
 
-.mainContent {
+/* .mainContent {
   display: flex;
-}
+} */
 
 main {
   width: 90%;
@@ -156,18 +157,25 @@ img {
       position:static;
       /* float: right; */
       width: fit-content;
+      background-color: #f9f9f9;
+      color: black;
   }
   /* .menu li{
       float: left;
   } */
 
-  header.header {
+  header#sideNav {
     width: 80%;
     padding: 1rem .5rem;
     background-color: #f9f9f9;
     color: black;
     border: none;
     box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: .8rem;
+    padding-bottom: 25%;
   }
 
   .header a, .nav a {
@@ -183,17 +191,18 @@ img {
   }
 
   .menu a {
-    padding: 1rem;
+    padding: .4rem;
     padding-left: 0;
   }
 
-  .nav {
-    background-color: #f9f9f9;
-    color: black;
+  .nonArtLinks {
+    margin-top: 2rem;
   }
 
   a.logo {
     margin-left: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -202,10 +211,6 @@ img {
     align-items: center;
     justify-content: flex-start;
     margin-left: 10%;
-  }
-
-  .logo {
-    font-size: 1.2rem;
   }
 
   main {
@@ -219,6 +224,11 @@ img {
     height: 100%;
     object-fit: cover;
     padding: 1rem;
+  }
+
+  .caption {
+    padding: 1rem;
+    font-size: .8rem;
   }
 
   .hamb{
