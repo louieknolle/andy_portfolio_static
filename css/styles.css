@@ -15,7 +15,7 @@
 }
 body{
     background-color: var(--white);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 a{
     text-decoration: none;
@@ -27,11 +27,10 @@ ul{
 /* Header */
 .header{
   background-color: #f9f9f9;
-  box-shadow: 1px 1px 5px 0px var(--gray);
   position: sticky;
   top: 0;
-  width: 100%
-  ;
+  width: 100%;
+  padding: 2rem;
 }
 /* Logo */
 .logo{
@@ -68,11 +67,11 @@ ul{
 .hamb{
   cursor: pointer;
   float: right;
-  padding: 40px 20px;
+  padding: 1rem 1rem;
 }/* Style label tag */
 
 .hamb-line {
-  background: var(--white);
+  background: black;
   display: block;
   height: 2px;
   position: relative;
@@ -82,7 +81,7 @@ ul{
 
 .hamb-line::before,
 .hamb-line::after{
-  background: var(--white);
+  background: black;
   content: '';
   display: block;
   height: 100%;
@@ -121,10 +120,14 @@ ul{
   display: flex;
 } */
 
-main {
-  width: 90%;
+.mainContent {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.caption {
+  padding: 1rem;
 }
 
 img {
@@ -165,7 +168,7 @@ img {
   } */
 
   header#sideNav {
-    width: 80%;
+    width: 20%;
     padding: 1rem .5rem;
     background-color: #f9f9f9;
     color: black;
@@ -217,6 +220,10 @@ img {
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+
+  .mainContent {
+    padding-right: 2rem;
   }
 
   img {
