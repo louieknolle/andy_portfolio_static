@@ -176,9 +176,10 @@ img {
     box-shadow: none;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:;
     font-size: .8rem;
-    padding-bottom: 20%;
+    padding-bottom: 40%;
+    margin-left: 5%;
   }
 
   .header a, .nav a {
@@ -206,6 +207,7 @@ img {
     margin-left: 0;
     margin-bottom: 1rem;
     font-size: 1rem;
+    margin-top: 0;
   }
 
   .container {
